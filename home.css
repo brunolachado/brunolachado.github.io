@@ -20,13 +20,10 @@
 
 body {
     margin: 0;
-    height: 100vh;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
-    background: #0F2027;
-    background: -webkit-radial-gradient(center, ellipse cover, #2C5364 0%, #203A43 50%, #0F2027 100%);
-    background: radial-gradient(ellipse at center, #2C5364 0%, #203A43 50%, #0F2027 100%);
+    background-color: #131313;
     font-family: __inter_Fallback_20b187, ui-sans-serif, system-ui, -apple-system, "system-ui", Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
 }

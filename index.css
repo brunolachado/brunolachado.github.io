@@ -1,20 +1,32 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
-  
-  * {
+
+* {
     margin: 0;
 }
-    
-  input, button, textarea, select {
+
+input,
+button,
+textarea,
+select {
     font: inherit;
 }
-  
-  p, h1, h2, h3, h4, h5, h6 {
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     overflow-wrap: break-word;
 }
-  
-  #root, #__next {
+
+#root,
+#__next {
     isolation: isolate;
 }
 
@@ -31,14 +43,10 @@ body {
 .nav {
     display: flex;
     justify-content: center;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
 }
 
 .nav-links {
-    width: 700px;
+    width: 500px;
     display: flex;
     justify-content: center;
     margin-top: 35px;
@@ -46,11 +54,6 @@ body {
     gap: 60px;
     font-size: 1.5rem;
     padding: 5px;
-    border: 1px solid white;
-    border-radius: 20px;
-    background-color: #1c1c1c;
-    background: transparent;
-    backdrop-filter: blur(5px);
 }
 
 .nav-links-item {
@@ -70,8 +73,57 @@ body {
     opacity: 0.5;
 }
 
-.space {
-    padding-top: 70px;
+.space1 {
+    margin-top: 100px;
+}
+
+.hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+.typewritter {
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+.space2 {
+    margin-top: 10px;
+}
+
+.photo img {
+    border: 3px solid black;
+    border-radius: 20px;
+    max-width: 400px;
+}
+
+.contacts a {
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.contacts a:hover {
+    transform: scale(1.2);
 }
 
 #about-container {
@@ -92,6 +144,7 @@ body {
     border: 1px solid grey;
     border-radius: 5px;
 }
+
 .about-description {
     width: 700px;
     display: flex;
@@ -102,7 +155,7 @@ body {
     word-spacing: 1px;
     text-align: justify;
     color: white;
-    margin: 20px;    
+    margin: 20px;
 }
 
 .about-container-left {
@@ -158,6 +211,56 @@ body {
     justify-content: center;
     flex-direction: row;
     gap: 40px;
+}
+
+#experience-container {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+.experience-title {
+    font-size: 3rem;
+    color: white;
+    margin-top: 70px;
+}
+
+.experience {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: #1c1c1c
+}
+
+.experience-date {
+    display: flex;
+    width: 200px;
+    color: white;
+    font-size: 1rem;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.experience-job {
+    margin-top: 10px;
+    padding: 0;
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.experience-description {
+    width: 1020px;
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.space {
+    padding-top: 50px;
 }
 
 .footer {

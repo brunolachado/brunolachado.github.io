@@ -23,9 +23,7 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
-    background: #0F2027;
-    background: -webkit-radial-gradient(center, ellipse cover, #2C5364 0%, #203A43 50%, #0F2027 100%);
-    background: radial-gradient(ellipse at center, #2C5364 0%, #203A43 50%, #0F2027 100%);
+    background-color: #131313;
     font-family: __inter_Fallback_20b187, ui-sans-serif, system-ui, -apple-system, "system-ui", Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
 }
@@ -33,10 +31,14 @@ body {
 .nav {
     display: flex;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
 .nav-links {
-    width: 500px;
+    width: 700px;
     display: flex;
     justify-content: center;
     margin-top: 35px;
@@ -44,6 +46,11 @@ body {
     gap: 60px;
     font-size: 1.5rem;
     padding: 5px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: #1c1c1c;
+    background: transparent;
+    backdrop-filter: blur(5px);
 }
 
 .nav-links-item {
@@ -68,7 +75,7 @@ body {
 }
 
 #about-container {
-    max-width: 1220px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
 }
@@ -77,21 +84,25 @@ body {
     display: flex;
     font-size: 3rem;
     color: white;
-    margin: 25px;
+    margin-top: 70px;
 }
 
+.about-description-card {
+    background-color: #1c1c1c;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
 .about-description {
-    width: 650px;
+    width: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 1.5;
-    word-spacing: 0.5px;
+    word-spacing: 1px;
     text-align: justify;
     color: white;
-    margin: 20px;
-    
+    margin: 20px;    
 }
 
 .about-container-left {

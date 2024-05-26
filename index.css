@@ -30,6 +30,10 @@ h6 {
     isolation: isolate;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     line-height: 1.5;
@@ -61,13 +65,13 @@ body {
     border: 1px solid white;
     border-radius: 25px;
     background-color: rgba(44, 44, 44, 0.5);
-    /* Semi-transparent background */
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
 }
 
 .nav-links img {
     height: 20px;
 }
+
 .nav-links-item {
     display: flex;
     align-items: center;
@@ -190,13 +194,13 @@ body {
 .about-container-right {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     width: 520px;
 }
 
 .about-container-right img {
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 90%;
+    max-height: 90%;
     box-shadow: #322C2B;
 }
 
@@ -254,7 +258,12 @@ body {
     justify-content: space-around;
     border: 1px solid grey;
     border-radius: 5px;
-    background-color: #1c1c1c
+    background-color: #1c1c1c;
+    transition: border 0.2s ease-in-out;
+}
+
+.experience:hover {
+    border: 1px solid white;
 }
 
 .experience-date {
@@ -275,6 +284,10 @@ body {
     align-items: center;
     gap: 15px;
 
+}
+
+.experience-job img {
+    height: 20px;
 }
 
 .experience-description {

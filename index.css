@@ -91,7 +91,7 @@ body {
 }
 
 .space {
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .space1 {
@@ -172,6 +172,7 @@ body {
     background-color: #1c1c1c;
     border: 1px solid grey;
     border-radius: 5px;
+    margin-top: 40px;
 }
 
 .about-description {
@@ -196,11 +197,12 @@ body {
     justify-content: center;
     align-items: end;
     width: 520px;
+    margin-left: 15px;
 }
 
 .about-container-right img {
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 100%;
+    max-height: 100%;
     box-shadow: #322C2B;
 }
 
@@ -248,9 +250,25 @@ body {
     margin: 0 auto;
 }
 
+.experience-card {
+    margin-top: 40px;
+}
+
 .experience-title {
     font-size: 3rem;
     color: white;
+}
+
+/* Define the initial state and keyframes for the slide-in animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .experience {
@@ -260,6 +278,9 @@ body {
     border-radius: 5px;
     background-color: #1c1c1c;
     transition: border 0.2s ease-in-out;
+    animation: slideIn 0.5s ease-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 .experience:hover {

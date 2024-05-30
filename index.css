@@ -250,7 +250,7 @@ body {
 }
 
 #experience-container {
-    max-width: 1220px;
+    max-width: 1200px;
     margin: 0 auto;
     animation: fade-down 0.7s 0.3s ease-in backwards;
 }
